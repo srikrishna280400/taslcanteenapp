@@ -1,7 +1,7 @@
 
   # TASL Canteen App
 
-  This is a code bundle for User Registration and Location Sharing. The original project is available at https://www.figma.com/design/PKDA8IVs4MlsWtgQR5igkd/User-Registration-and-Location-Sharing.
+  This is a code bundle for User Registration and Location Sharing. taslcanteenapp.vercel.app
 
   ## Running the code
 
