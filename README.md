@@ -41,7 +41,7 @@
     § Used Vite dev server + Chrome device toolbar for mobile preview, vite-plugin-pwa for installability, deployed on Vercel, tested publicly via Cloudflare Tunnel.
 
 
- ### Key Decisions, Approaches, Reasons, Product Thinking
+ ### Key Decisions, Approaches, Reasons & Product Thinking
  
  This is the "why" behind the choices — the judgment layer.
 
@@ -80,7 +80,7 @@
     10. CORS & API contract: Spent time configuring Supabase CORS origins, adding proper JSON middleware, and designing an API contract stable enough for future MERN migration without breaking frontend change
     11. Integer-cents precision: Had to consciously decide to store monetary values as integer cents rather than floats — after encountering floating-point precision edge cases in balance calculations
 
- ### Key Decisions/Approaches — Reasons & Product Thinking
+ ### Key Decisions, Approaches, Reasons & Product Thinking
 
     1. Supabase over custom MERN/Flask-SQLAlchemy: Chose Supabase (PostgreSQL) for ACID guarantees on transactional order data, built-in auth with JWT, auto-generated REST API eliminating ORM boilerplate, and lower operational overhead vs maintaining a custom MERN stack alone
     2. Integer-cents monetary storage: Explicitly chose integer-cents to prevent floating-point precision errors — product decision to avoid "₹1.00 showing as ₹0.999999" bugs in outstanding balance displays
