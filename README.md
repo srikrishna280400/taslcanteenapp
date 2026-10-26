@@ -9,7 +9,7 @@
 
   Run `npm run dev` to start the development server.
 
- # A Vibe-Coded project by a MechE grad with 2+ years of core experience in the defense industry, on GPT-3 era models across 11 conversations spanning ~1.1B tokens:
+ # A Vibe-Coded project by a MechE grad with 2+ years of core experience in the defense industry and no SWE background, on GPT-3 era models across 11 conversations spanning ~1.1B tokens:
 
  ## Frontend Journey
 
