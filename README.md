@@ -1,7 +1,7 @@
 
   # TASL Canteen App
 
-  This is a code bundle for User Registration and Location Sharing. taslcanteenapp.vercel.app
+  taslcanteenapp.vercel.app
 
   ## Running the code
 
