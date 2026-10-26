@@ -9,11 +9,11 @@
 
   Run `npm run dev` to start the development server.
 
-  A Vibe-Coded project by a MechE on GPT-3 era models across 11 conversations spanning ~1.1B tokens:
+ # A Vibe-Coded project by a MechE on GPT-3 era models across 11 conversations spanning ~1.1B tokens:
 
-  Frontend Journey — Two-Category Articulation
+ ## Frontend Journey
 
-The Journey: Design → Generate → Debug → Deploy
+ ### The Journey: Design → Generate → Debug → Deploy
 
 
 1. Design first, using no-code tools: 
@@ -41,9 +41,9 @@ The Journey: Design → Generate → Debug → Deploy
     § Used Vite dev server + Chrome device toolbar for mobile preview, vite-plugin-pwa for installability, deployed on Vercel, tested publicly via Cloudflare Tunnel.
 
 
-Category 2 — Key Decisions, Approaches, Reasons, Product Thinking
-
-This is the "why" behind the choices — the judgment layer.
+ ### Key Decisions, Approaches, Reasons, Product Thinking
+ 
+ This is the "why" behind the choices — the judgment layer.
 
     1. Why no-code first: Fast exploration of screens and design validation at low cost, before investing engineering effort.
     2. Why Figma-first before coding: Design fidelity and user flow validation before writing code — product risk reduction.
@@ -64,9 +64,9 @@ This is the "why" behind the choices — the judgment layer.
 
 
 
-Backend Journey
+ ## Backend Journey
 
-Journey, Debugging, Iterative Building
+ ### Journey, Debugging, Iterative Building
 
     1. Initial stack decision: Started by evaluating custom code (Flask/SQLAlchemy) vs adopting a no-code platform — weighed speed of prototyping against need for transactional integrity and data control
     2. MySQL/phpMyAdmin attempt: Set up offline MySQL database with phpMyAdmin interface, but ditched it due to migration pain points, limited relational features, and poor developer ergonomics for a solo builder
@@ -80,7 +80,7 @@ Journey, Debugging, Iterative Building
     10. CORS & API contract: Spent time configuring Supabase CORS origins, adding proper JSON middleware, and designing an API contract stable enough for future MERN migration without breaking frontend change
     11. Integer-cents precision: Had to consciously decide to store monetary values as integer cents rather than floats — after encountering floating-point precision edge cases in balance calculations
 
-Key Decisions/Approaches — Reasons & Product Thinking
+ ### Key Decisions/Approaches — Reasons & Product Thinking
 
     1. Supabase over custom MERN/Flask-SQLAlchemy: Chose Supabase (PostgreSQL) for ACID guarantees on transactional order data, built-in auth with JWT, auto-generated REST API eliminating ORM boilerplate, and lower operational overhead vs maintaining a custom MERN stack alone
     2. Integer-cents monetary storage: Explicitly chose integer-cents to prevent floating-point precision errors — product decision to avoid "₹1.00 showing as ₹0.999999" bugs in outstanding balance displays
