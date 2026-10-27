@@ -51,16 +51,9 @@
     4. Why GitHub repo + AI codegen: To translate design JSON into JSX quickly while keeping human oversight of the architecture.
     5. Why screen isolation: Debugging all screens together was impossible; isolating screens was a deliberate engineering decision to make the system debuggable and testable.
     6. Why PWA over Flutter/native: Impractical, paywalled, and complex for a solo builder; Vite+React+PWA gave cross-platform reach with free-tier viability and later Android installability via manifest/service worker.
-    7. Why Radix UI Sheet: Accessible drawer navigation for staff usage.
-    8. Why localStorage auth prototype: Frontend-only prototype scope; real auth was handled at the backend level via Supabase JWT, so the prototype didn't duplicate it.
-    9. Why CodeSandbox testing: Fast feedback loop before local environment friction
-    10. Why Cloudflare Tunnel/ngrok/equivalent dynamic tunneling: For public HTTPS testing of the Vite dev server, allowing real-time debugging and feedback on actual mobile viewing conditions (without relying solely on local network configurations). To quickly expose a local React/Vite app to Android devices for testing actual mobile UI, transitions, animations, and user flow states without complex VPN or network setup — crucial for debugging realistic user experience across devices.
-    11. Why mobile-first responsive design: Key decision to optimize for 9:16 phone aspect ratio since canteen staff use the app on mobile devices during their workflow.
-    12. Why transitions and animations: Added subtle UI transitions and animation states to smooth the user experience between screens (register→login→dashboard→create-bill) and provide visual feedback during state changes.
-    13. Why navigation state management: Used React state management to maintain app navigation logic, screen transition flows, and user session states (localStorage) for prototype reliability.
-    14. Why Chrome device toolbar + local preview: For quick mobile preview testing without needing external tools, but recognized it couldn't replace real-device testing for Android experience.
-    15. Why PWA features (manifest.json, service-worker): To enable Android installability and offline capabilities, enabling staff to save the app to their home screen and work in various network conditions.
-    16. Why Vercel deployment + Cloudflare Tunnel: Vercel for reliable production hosting, Cloudflare Tunnel for temporary public testing while maintaining development environment security.
+    7. Why Cloudflare Tunnel/ngrok/equivalent dynamic tunneling: For public HTTPS testing of the Vite dev server, allowing real-time debugging and feedback on actual mobile viewing conditions (without relying solely on local network configurations). To quickly expose a local React/Vite app to Android devices for testing actual mobile UI, transitions, animations, and user flow states without complex VPN or network setup — crucial for debugging realistic user experience across devices.
+    8. Why Chrome device toolbar + local preview: For quick mobile preview testing without needing external tools, but recognized it couldn't replace real-device testing for Android experience.
+    9. Why Vercel deployment + Cloudflare Tunnel: Vercel for reliable production hosting, Cloudflare Tunnel for temporary public testing while maintaining development environment security.
 
 
 
