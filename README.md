@@ -11,6 +11,14 @@
 
  # A Vibe-Coded project by a MechE grad with 2+ years of core experience in the defense industry and no SWE background, on GPT-3 era models across 11 conversations spanning ~1.1B tokens:
 
+- Built a full stack order/bill management React-Tailwind PWA App using GPT-3 era models, to accelerate code development.
+- Applied product judgement to understand the tech stack, dependencies, design user flows, app-state navigation, constraints and edge cases.
+- Designed a normalized PostgreSQL schema (users, menu_items, orders, order_items, payments) with BIGSERIAL keys, materialized view user_balances for balance computation, and integer-cents for monetary precision, with linked records, rollups, and formula fields. 
+- Built Express API with JWT protection, parameterized queries against SQL injection, and transactional order creation. Implemented API contract stability for future MERN migration
+- Built features like auth registration/login, food catalogue with category grouping, cart state management, order placement, bill creation rollback, payment and outstanding balance tracking history, navigation drawer with role-based views,transitions/animations/floating icons for navigating screens.
+- Leveraged tools, plugins like Airtable, Supabase, Figma plugins, Cloudfare, ngrok, Digital Ocean endpoints, Node.Js, npm-venv, Android SDK, Vercel, PHP, Git across the product building-iteration journey; learning each tool through documentation, error messages, and iterative debugging
+- Implemented Cloudflare tunneling for public HTTPS testing of the Vite dev server, allowing real-time debugging and feedback on actual mobile viewing conditions (without relying solely on local network configurations). To quickly expose a local React/Vite app to Android devices for testing actual mobile UI, transitions, animations, and user flow states without complex VPN or network setup — crucial for debugging realistic user experience across devices.
+
  ## Frontend Journey
 
  ### The Journey: Design → Generate → Debug → Deploy
